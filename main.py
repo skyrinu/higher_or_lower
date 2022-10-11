@@ -19,8 +19,6 @@ def show_questions(p1, p2):
 
 
 def higher_or_lower():
-    print(logo)
-    
     position_a = choice(data)
     position_b = choice(data)
     if position_a == position_b:
@@ -30,6 +28,7 @@ def higher_or_lower():
     game_ends = False
 
     while not game_ends:
+        print(logo)
         has_more_followers = compare_followers(position_a, position_b)
         show_questions(position_a, position_b)
 
