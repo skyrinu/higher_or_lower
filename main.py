@@ -28,8 +28,8 @@ def higher_or_lower():
     game_ends = False
 
     while not game_ends:
-        has_more_followers = compare_followers(position_a, position_b)
         clear()
+        has_more_followers = compare_followers(position_a, position_b)
         show_questions(position_a, position_b)
 
         user_input = input("Who has more followers? Type 'A' or 'B': ").lower()
