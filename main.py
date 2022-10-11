@@ -28,7 +28,6 @@ def higher_or_lower():
     game_ends = False
 
     while not game_ends:
-        clear()
         has_more_followers = compare_followers(position_a, position_b)
         show_questions(position_a, position_b)
 
@@ -39,6 +38,7 @@ def higher_or_lower():
             print(f"You're right! Current score: {score}.")
             position_a = position_b
             position_b = choice(data)
+            clear()
         else:
             print(f"Sorry, That's wrong answer. Final score {score}.")
             game_ends = True
