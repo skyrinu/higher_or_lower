@@ -2,7 +2,7 @@ from art import logo
 from art import vs
 from game_data import data
 from random import choice
-# from replit import clear
+from replit import clear
 
 
 def compare_followers(position_a, position_b):
@@ -43,7 +43,7 @@ def higher_or_lower():
             game_ends = True
 
 
-        # clear()
+        clear()
 
 
 higher_or_lower()
